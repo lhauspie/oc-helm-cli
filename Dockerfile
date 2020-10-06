@@ -1,7 +1,11 @@
 FROM debian as builder
 
-ARG OPENSHIFT_CLI_SOURCE="https://github.com/openshift/origin/releases/download/v3.10.0/openshift-origin-client-tools-v3.10.0-dd10d17-linux-64bit.tar.gz"
-ARG HELM_CLIENT_SOURCE="https://storage.googleapis.com/kubernetes-helm/helm-v2.13.1-linux-amd64.tar.gz"
+ARG OC_CLI_VERSION
+ARG OC_CLI_SHORTSHA
+ARG HELM_VERSION
+
+ARG OPENSHIFT_CLI_SOURCE="https://github.com/openshift/origin/releases/download/v${OC_CLI_VERSION}/openshift-origin-client-tools-v${OC_CLI_VERSION}-${OC_CLI_SHORTSHA}-linux-64bit.tar.gz"
+ARG HELM_CLIENT_SOURCE="https://storage.googleapis.com/kubernetes-helm/helm-v${HELM_VERSION}-linux-amd64.tar.gz"
 
 ENV WORKDIR="~/download"
 WORKDIR $WORKDIR
