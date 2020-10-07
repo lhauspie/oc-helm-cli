@@ -7,7 +7,7 @@ Docker image with Openshift CLI and Helm CLI
 This image take 3 args : 
 * OC_CLI_VERSION : Openshift target version (ex: 3.10.0) 
 * OC_CLI_SHORTSHA : Openshift target version short sha tag commit (ex: dd10d17)
-* HELM_VERSION : Helm Target version (ex: 2.13.1)
+* HELM_VERSION : Helm target version (ex: 2.13.1)
 
 You will find openshift cli version [there](https://github.com/openshift/origin/releases)
 
