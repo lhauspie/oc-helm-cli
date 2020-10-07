@@ -9,7 +9,7 @@ This image take 3 args :
 * OC_CLI_SHORTSHA : Openshift target version short sha tag commit (ex: dd10d17)
 * HELM_VERSION : Helm target version (ex: 2.13.1)
 
-You will find openshift cli version [there](https://github.com/openshift/origin/releases)
+You will find openshift cli versions [there](https://github.com/openshift/origin/releases)
 
 ### Example
 ```bash
